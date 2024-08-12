@@ -1,0 +1,27 @@
+CREATE TABLE Custumers (
+id INT PRIMARY KEY,
+first_name VARCHAR(50),
+last_name VARCHAR(50),
+age INT);
+
+1- INSERT INTO Custumers (id, first_name, last_name)
+Values (1,'Mishel' ,'Henry');
+
+2- UPDATE Custumers SET (first_name, last_name) = ('James', 'Henryy') WHERE id = 1
+
+3- DELETE FROM Custumers WHERE id = 1
+
+4- SELECT last_name FROM Custumers 
+
+5- INSERT INTO Custumers (id, first_name, last_name)
+Values (1,'Jim' ,'Hendrix');
+
+6- SELECT first_name FROM Custumers WHERE id = 2
+
+7- UPDATE Custumers SET (first_name, last_name) = ('Roselyn', 'Alvarez') WHERE id = 2
+
+8- UPDATE Custumers SET (first_name, last_name) = ('Michael', 'Kyle')
+
+9- SELECT * FROM Custumers
+
+10- DELETE FROM Custumers
