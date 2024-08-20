@@ -1,0 +1,25 @@
+CREATE TABLE Products (
+    id SERIAL PRIMARY KEY,         
+    product_name VARCHAR(100) NOT NULL,  
+    description TEXT,             
+    price NUMERIC(10, 2) NOT NULL, 
+    inserted_at DATE,              
+    is_available BOOLEAN          
+);
+
+INSERT INTO Products (id, product_name, description, price, inserted_at, is_available)
+VALUES (1,'Foundation', 'Makeup', 60, '23-02-2024', 'yes'),
+(2,'Bottle', 'Hydrate', 101, '30-05-2024', 'no'),
+(3,'Cookie', 'Food', 5, '14-03-2024', 'yes');
+
+1 - SELECT AVG(price) FROM Products
+
+2 - SELECT (product_name, price) FROM Products WHERE price = (SELECT MIN(price) FROM Products)
+
+SELECT (product_name, price) FROM Products WHERE price = (SELECT MAX(price) FROM Products)
+
+3 - SELECT COUNT(*) FROM Products WHERE inserted_at = '21-08-2024'
+
+4 - SELECT SUM(price) FROM Products WHERE price > 50
+
+5 - SELECT product_name FROM Products WHERE price > 100
