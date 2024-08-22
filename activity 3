@@ -1,0 +1,26 @@
+1 - INSERT INTO Products (ProductName, CategoryID, Unit, Price)
+Values ('Tofu', 7, '24 - 250 g pkgs', 23.50);
+
+2 - UPDATE Products SET price = (21) WHERE ProductName = 'Chang'
+
+3 - SELECT SUM(price) FROM Products
+
+4 - SELECT * FROM Categories
+
+5 - SELECT COUNT(ProductName) FROM Products
+
+6 - SELECT (ProductName, price) FROM Products
+
+7 - SELECT CategoryID, COUNT (*) AS ProductName
+FROM Products
+GROUP BY CategoryID
+
+8 - SELECT * FROM Products INNER JOIN Categories ON Products.CategoryID = Categories.CategoryID
+
+9 - DELETE FROM Products WHERE ProductName = ('Aniseed Syrup')
+
+10 - SELECT * FROM Products LEFT JOIN Categories ON Products.CategoryID = Categories.CategoryID
+
+11 - UPDATE Products SET Unit = ('20 - 500 g') WHERE ProductName =  'Mishi Kobe Niku'
+
+12 - SELECT * FROM Products RIGHT JOIN Categories ON Products.CategoryID = Categories.CategoryID
